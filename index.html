@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An All-in-one Cryptocurrency App | Exchage, Trade and Hodl Crypto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+    <header>
+        <!-- Nav bar section  -->
+
+        <nav class="nav-bar"> 
+            <ul>
+                <img src="images/mini-logo.svg" alt="">
+                <li id="product">Products<i class="fa-solid fa-chevron-down"></i></li>
+                <li>Fees limits</li>
+                <li id="earn">Earn<i class="fa-solid fa-chevron-down"></i></li>
+                <li id="easy">Easy start<i class="fa-solid fa-chevron-down"></i></li>
+                <li id="academy">Academy<i class="fa-solid fa-chevron-down"></i></li>
+                <li id="company">Company<i class="fa-solid fa-chevron-down"></i></li>
+            </ul>
+            <div class="navbar-2">
+                <button class="sgn-in-btn">Sign in</button>
+                <button class="get-started-btn">Get started</button>
+                <ul>
+                    <li id="download"><i class="fa-solid fa-download"></i> Download</li>
+                    <li class="en"><i class="fa-solid fa-globe"></i> En</li>
+                </ul>
+            </div>
+        </nav> 
+
+        <div class="product-active active">
+            <div class="product-sec-1">
+                <div class="product-icons">
+                    <img src="images/prod-exchange.svg" alt="">
+                    <a href="exchange.html">Exchage</a>
+                </div>
+                <div class="product-icons">
+                    <img src="images/prod-trading-signal.svg" alt="">
+                    <a href="">Trading signals</a>
+                </div>
+                <div class="product-icons">
+                    <img src="images/prod-wallet.svg" alt="">
+                    <a href="">Wallets</a>
+                </div>
+            </div>
+            <div class="product-sec-2">
+                <div class="product-icons1">
+                    <img src="Images/Trade.svg" alt="">
+                    <a href="">Crypto trading</a>
+                </div>
+                <div class="product-icons">
+                    <img src="images/Cryptocurrencies.svg" alt="">
+                    <a href="">Cryptocurrencies</a>
+                </div>
+                <div class="product-icons">
+                    <img src="images/news.svg" alt="">
+                    <a href="">News</a>
+                </div>
+                <div class="product-icons">
+                    <img src="images/profit-share.svg" alt="">
+                    <a href="">Profit share</a>
+                </div>
+                <div class="product-icons">
+                    <img src="images/crypto-indices.svg" alt="">
+                    <a href="">Crypto Indices</a>
+                </div>
+                <div class="product-icons">
+                    <img src="images/tokenized-assets.svg" alt="">
+                    <a href="">Tokenized assets</a>
+                </div>
+                <div class="product-icons">
+                    <img src="images/crypto-options.svg" alt="">
+                    <a href="">Crypto Option</a>
+                </div>
+                <div class="product-icons">
+                    <img src="images/dex-icon.svg" alt="">
+                    <a href="">DEX-perpetuals</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="earn-active active">
+            <div class="earn-icons">
+                <img src="images/miner.svg" alt="">
+                <a href="">Bitcoin mining</a>
+            </div>
+            <div class="earn-icons">
+                <img src="images/unlocked-staking.svg" alt="">
+                <a href="">Unlocked staking</a>
+            </div>
+            <div class="earn-icons">
+                <img src="images/refer-friend.svg" alt="">
+                <a href="">Refer a friend</a>
+            </div>
+        </div>
+
+        <div class="easy-active active">
+            <div class="easy-icons">
+                <img src="images/registration.svg" alt="">
+                <a href="">Registration and featurs</a>
+            </div>
+            <div class="easy-icons">
+                <img src="images/buy-crypto.svg" alt="">
+                <a href="">How to buy crypto?</a>
+            </div>
+            <div class="easy-icons">
+                <img src="images/withdraw-crypto.svg" alt="">
+                <a href="">How to withdraw crypto?</a>
+            </div>
+        </div>
+
+        <div class="academy-active active">
+            <div class="academy-icons">
+                <img src="images/crypto-research.svg" alt="">
+                <a href="">Crypto research</a>
+            </div>
+            <div class="academy-icons">
+                <img src="images/invest-idea.svg" alt="">
+                <a href="">Invest Ideas</a>
+            </div>
+            <div class="academy-icons">
+                <img src="images/calendar.svg" alt="">
+                <a href="">Weekly crypto digest</a>
+            </div>
+            <div class="academy-icons">
+                <img src="images/education-lessons.svg" alt="">
+                <a href="">Education lessons</a>
+            </div>
+            <div class="academy-icons">
+                <img src="images/blog.svg" alt="">
+                <a href="">Blog</a>
+            </div>
+        </div>
+
+        <div class="company-active active">
+            <div class="company-icons">
+                <img src="images/about-us.svg" alt="">
+                <a href="">About us</a>
+            </div>
+            <div class="company-icons">
+                <img src="images/careers.svg" alt="">
+                <a href="">Careers</a>
+            </div>
+            <div class="company-icons">
+                <img src="images/affiliate-programm.svg" alt="">
+                <a href="">Affliate programme</a>
+            </div>
+            <div class="company-icons">
+                <img src="images/security.svg" alt="">
+                <a href="">Security</a>
+            </div>
+            <div class="company-icons">
+                <img src="images/help-support.svg" alt="">
+                <a href="">Help & Support</a>
+            </div>
+        </div>
+
+        <div class="download-active active">
+            <div class="download-sec1">
+                <div class="download-icons">
+                    <img src="images/apple-icon.svg" alt="">
+                    <a href="">App Store</a>
+                </div>
+                <p>4.4<i class="fa-solid fa-star star-1"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+                
+                <div class="download-icons">
+                    <img src="images/huawei-icon.svg" alt="">
+                    <a href="">AppGalery</a>
+                </div>
+            </div>
+            <div class="download-sec2">
+                <div class="download-icons">
+                    <img src="images/google-icon.svg" alt="">
+                    <a href="">Google Play</a>
+                </div>
+                <p>4.4<i class="fa-solid fa-star star-1"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+
+                <div class="download-icons">
+                    <img src="images/android-icon.svg" alt="">
+                    <a href="">Android APK</a>
+                </div>
+            </div>
+            <div class="download-sec3">
+                <img src="images/qr-code-stormgain.png" alt="">
+                <p>scan to download</p>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <input class="input" type="checkbox" name="" id="switch">
+        <label class="label" for="switch">
+           <div class="cex"><h3>CEX</h3></div>
+           <div class="dex"><h3>DEX</h3></div>
+            <div class="swith-circle"><h3 class="cex-dex">CEX</h3></div>
+        </label>
+        <!-- header section  -->
+        <div class="top-container">
+            <div class="top-content">
+                <h1>All-in-one crypto app with a Bitcoin cloud miner</h1>
+                <ul>
+                    <li>Crypto Trading with Leverage of up to 500x!</li>
+                    <li>Bitcoin Cloud Mining!</li>
+                    <li>Crypto Exchange!</li>
+                    <li>Exclusive Trading Signals!</li>
+                </ul>
+                <button class="starnow-btn">Get started</button>
+            </div>
+
+            <img src="https://stormgain.com/sites/default/files/styles/dex_cex_hero_image_1x/public/2022-12/illustration_cex.png?itok=N1NgEbLg" alt="">
+        </div>
+
+        <div class="top-container-dex active">
+            <div class="top-content">
+                <h1>Decentralized crypto trading with leverage of up to 500x</h1>
+                <ul>
+                    <li>Trade directly from your blockchain wallet </li>
+                    <li>No deposit required</li>
+                    <li>Complete control of your crypto funds</li>
+                </ul>
+                <button class="starnow-btn">Coming soon...</button>
+                <a href="">Learn more<i class="fa-solid fa-arrow-right"></i></a>
+
+                <div class="dex-read-trust">
+                    <div class="read">
+                        <img src="images/eye_0.svg" alt="">
+                        <p>Read-only permissions. We will never do anything without your approval. </p>
+                    </div>
+                    <div class="trust">
+                        <img src="images/hand_heart_0.svg" alt="">
+                        <p>Trusted by over 2.5 million StormGain traders</p>
+                    </div>
+                </div>
+            </div>
+
+            <img src="https://stormgain.com/sites/default/files/styles/dex_cex_hero_image_1x/public/2022-12/illustration-dex3.png?itok=Nvy_xa5L" alt="">
+        </div>
+
+        <h3 class="volume">Buy / Sell top crypto:<span class="volume-amount"> $8 450 974 366</span> <span class="volume-days">30 day volume</span></h3>
+        <div class="coin-container">
+            <div class="btc">
+                <img src="Images/BTC.svg" alt="">
+                <h4>Bitcoin/Tether 16 832.59</h4>
+            </div>
+            <div class="eth">
+                <img src="Images/ETH.svg" alt="">
+                <h4>Ethereum/Tether 1 230.535</h4>
+            </div>
+            <div class="ltc">
+                <img src="Images/LTC.svg" alt="">
+                <h4>Litecoin/Tether 76.910</h4>
+            </div>
+            <div class="doge">
+                <img src="Images/DOGE.svg" alt="">
+                <h4>Dogecoin 0.09538</h4>
+            </div>
+        </div>
+
+        <!-- Products section -->
+
+        <h2 class="storm-products">StormGain Products</h2>
+        <div class="grid-container">
+          <div class="futures">
+            <h3 class="futures-txt">FUTURES</h3>
+            <h3>Up To 500x Leverage</h3>
+            <p>Get funds for trading and increase your order volume with the highest leverage on the market.</p>
+            <h3>Zero Trading Commissions</h3>
+            <p>Enjoy 0% trading commission when you open new orders.</p>
+            <a href="">Learn more <i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+          <div class="exchange">
+            <h3 class="exchange-txt">EXCHANGE</h3>
+            <div class="btc-usdt">
+                <img src="images/bitcoin.svg" alt="">
+                <h3 class="btc-txt">BTC</h3>
+                <img class="exchange-img" src="images/exchange.svg" alt="">
+                <img src="images/tether.svg" alt="">
+                <h3 class="usdt-txt">USDT</h3>
+            </div>
+            <p>Access all the popular cryptocurrencies 24/7. It's simple and easy!</p>
+            <a href="">Learn more <i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+          <div class="mining">
+            <h3 class="mining-txt">MINING</h3>
+            <h3 class="earn-txt">Earn <span class="free-txt">free</span> Bitcoin daily</h3>
+            <p>No battery or CPU drainage. No mining equipment required. Fast and risk-free</p>
+            <a href="">Learn more <i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+          <div class="platform">
+            <h3 class="platform-txt">PLATFORM</h3>
+            <div class="platform-img">
+                <img class="web-img" src="images/web.svg" alt="">
+                <img src="images/apple.svg" alt="">
+                <img src="images/google-play.svg" alt="">
+                <img src="Images/huawei.svg" alt="">
+            </div>
+            <a href="">Learn more <i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+          <div class="signals">
+            <h3 class="signals-txt">SIGNALS</h3>
+            <P>Stop Loss (close trade at X loss) and Take Profit (close trade at X profit), 
+                Increase and Auto-Increase options available!
+            </P>
+            <a href="">Learn more <i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+          <div class="wallets">
+            <h3 class="wallets-txt">WALLETS</h3>
+            <H3>Buy and withdraw crypto with credit card</H3>
+            <P>Easy way to secure, manage and exchange your muliti-currency funds</P>
+            <a href="">Learn more <i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Market Section  -->
+
+        <h2 class="volatility-txt">High volatilities, last 24h</h2>
+        <table>
+                <tr class="th">
+                    <th>Asset name</th>
+                    <th>Activity</th>
+                    <th>Cost, USDT</th>
+                    <th>24h change</th>
+                </tr>
+                <tr>
+                    <td class="td-flex">
+                        <img src="https://lib.stormgain.com/icons/SUSHI.svg" alt="">
+                        <div class="sushi">
+                            <h3>SushiSwap</h3>
+                            <p>SUSHIUSDT</p>
+                        </div>
+                    </td>
+                    <td ><span class="volatility-end">Volatility ended < 1h ago</span></td>
+                    <td class="cost">0.9500</td>
+                    <td class="change">0.00%</td>
+                </tr>
+                <tr>
+                    <td class="td-flex">
+                        <img src="https://lib.stormgain.com/icons/SUSHI.svg" alt="">
+                        <div class="sushi">
+                            <h3>SushiSwap</h3>
+                            <p>SUSHIUSDT</p>
+                        </div>
+                    </td>
+                    <td ><span class="volatility-end">Volatility ended < 1h ago</span></td>
+                    <td class="cost">0.9500</td>
+                    <td class="change">0.00%</td>
+                </tr>
+                <tr>
+                    <td class="td-flex">
+                        <img src="https://lib.stormgain.com/icons/SUSHI.svg" alt="">
+                        <div class="sushi">
+                            <h3>SushiSwap</h3>
+                            <p>SUSHIUSDT</p>
+                        </div>
+                    </td>
+                    <td ><span class="volatility-end">Volatility ended < 1h ago</span></td>
+                    <td class="cost">0.9500</td>
+                    <td class="change">0.00%</td>
+                </tr>
+                <tr>
+                    <td class="td-flex">
+                        <img src="https://lib.stormgain.com/icons/SUSHI.svg" alt="">
+                        <div class="sushi">
+                            <h3>SushiSwap</h3>
+                            <p>SUSHIUSDT</p>
+                        </div>
+                    </td>
+                    <td ><span class="volatility-end">Volatility ended < 1h ago</span></td>
+                    <td class="cost">0.9500</td>
+                    <td class="change">0.00%</td>
+                </tr>
+                <tr>
+                    <td class="td-flex">
+                        <img src="https://lib.stormgain.com/icons/SUSHI.svg" alt="">
+                        <div class="sushi">
+                            <h3>SushiSwap</h3>
+                            <p>SUSHIUSDT</p>
+                        </div>
+                    </td>
+                    <td ><span class="volatility-end">Volatility ended < 1h ago</span></td>
+                    <td class="cost">0.9500</td>
+                    <td class="change">0.00%</td>
+                </tr>
+        </table>
+
+        <!-- review Section  -->
+
+        <h2 class="review-txt">Our customers reviews</h2>
+        <div class="review-container">
+            <img  src="images/logo-trustpilot.webp" alt="">
+            <img src="images/stars-review2.png" alt="">
+            <h3>Excellent 4.3</h3>
+            <p>Reviews 17 772</p>
+        </div>
+        <div class="feedback-container">
+            <div class="review1">
+                <div class="img-user">
+                    <img src="Images/avatar1.webp" alt="">
+                    <div class="user-rating">
+                        <p>Charlie R.</p>
+                        <img src="images/rating1.svg" alt="">
+                    </div>
+                </div>
+                <h3>Cool crypto mining platform</h3>
+                <p>Honestly I think this app is the easiest way to do 
+                    trade on crypto curriencies! Also here is an equal 
+                    situation for everyone to earn money!
+                </p>
+            </div>
+            <div class="review2">
+                <div class="img-user">
+                    <img src="Images/avatar2.webp" alt="">
+                    <div class="user-rating">
+                        <p>Allison S.</p>
+                        <img src="images/rating2.svg" alt="">
+                    </div>
+                </div>
+                <h3>I give 4 stars</h3>
+                <p>It is wonderful and easy. But try to work at 
+                    demo until familiar with this environment. Very
+                     good platform keep up the good work.
+                </p>
+            </div>
+            <div class="review3">
+                <div class="img-user">
+                    <img src="Images/avatar3.webp" alt="">
+                    <div class="user-rating">
+                        <p>Justin C.</p>
+                        <img src="images/rating1.svg" alt="">
+                    </div>
+                </div>
+                <h3>I was new to the trading scene</h3>
+                <p>It’s a good expirience to make you get better at trading... amazing 👏</p>
+            </div>
+        </div>
+
+        <!-- Partnership Section  -->
+
+        <div class="partnership-container">
+            <img src="Images/AIBC-2022.svg" alt="">
+            <img src="images/WF22.svg" alt="">
+            <img src="images/European-ceo-22.svg" alt="">
+            <img src="Images/WF21.svg" alt="">
+            <img src="Images/European-ceo-21.svg" alt="">
+            <img src="Images/UF-2021.svg" alt="">
+            <img src="Images/E.svg" alt="">
+        </div>
+
+        <!-- News & Blog Section  -->
+
+        <div class="news-blog">
+            <div class="news">
+                <h2 class=news-txt>StormGain News</h2>
+                <div class="news-img">
+                    <div class="img1">
+                        <img src="images/we-are-safe.png" alt="">
+                        <p class="date">28 Nov, 2022</p>
+                        <p><a href="">A Message for StormGain Clients</a></p>
+                    </div>
+                    <div class="img2">
+                        <img src="images/Analysis-of-DOGE-use-cases.jpg" alt="">
+                        <p class="date">25 Nov, 2022</p>
+                        <p><a href="">What's the future of DOGE after Musk's Twitter takeover?</a></p>
+                    </div>
+                </div>
+                <button class="allnews-btn">All News</button>
+            </div>
+            <div class="Blog">
+                <h2 class="blog-txt">Blog</h2>
+                <div class="blog-img">
+                    <div class="img1">
+                        <img src="images/hodl-crypto-main.jpg" alt="">
+                        <p class="date">07 Dec, 2022</p>
+                        <p><a href="">What does HODL mean in crypto?</a></p>
+                    </div>
+                    <div class="img2">
+                        <img src="images/analytics_1.jpg" alt="">
+                        <p class="date">07 Dec, 2022</p>
+                        <p><a href="">Bitcoin 'Santa Rally' boosted by declining US dollar, but miners are still struggling</a></p>
+                    </div>
+                </div>
+                <button class="allnews-btn">All blog articles</button>
+            </div>
+        </div>
+
+        <!-- Call to action section -->
+
+        <h1 class="call-to-action-txt">Try StormGain now!</h1>
+
+        <div class="bottom-container">
+            <div class="logo-section">
+                <img class="bottom-logo" src="images/logo.svg" alt="">
+                <img class="social-icons social-icons1" src="images/icon-telegram.svg" alt="">
+                <img class="social-icons" src="Images/icon-social-twitter-white.svg" alt="">
+                <img class="social-icons" src="Images/icon-social-facebook-white.svg" alt="">
+            </div>
+            <div class="content-section">
+                <div class="product">
+                    <h3>PRODUCT</h3>
+                    <p><a href="">Exchage</a></p>
+                    <p><a href="">Crypto trading</a></p>
+                    <p><a href="">wallets</a></p>
+                    <p><a href="">Trading Signals</a></p>
+                    <p><a href="">StormGain News</a></p>
+                    <p><a href="">Affliate</a></p>
+                    <p><a href="">Islamic accounts</a></p>
+                    <p><a href="">Cryptocurrencies</a></p>
+                    <p><a href="">Bitcoin faucet</a></p>
+                    <p><a href="">Cloud Mining</a></p>
+                    <p><a href="">Profit share</a></p>
+                    <p><a href="">Crypto Indices</a></p>
+                    <p><a href="">Tokenized assets</a></p>
+                    <p><a href="">Crypto options</a></p>
+                    <p><a href="">Loyalty programme</a></p>
+                </div>
+                <div class="company">
+                    <h3>COMPANY</h3>
+                    <p><a href="">About us</a></p>
+                    <p><a href="">Careers</a></p>
+                    <p><a href="">Affliate programme</a></p>
+                    <p><a href="">Refer a friend</a></p>
+                </div>
+                <div class="resources">
+                    <h3>RESOURCES</h3>
+                    <p><a href="">Help and Support</a></p>
+                    <p><a href="">Stormgain Crypto App <span class="new">New</span></a></p>
+                    <p><a href="">Fees & Limits</a></p>
+                    <p><a href="">Legal</a></p>
+                    <p><a href="">System status</a></p>
+                    <p><a href="">Public API</a></p>
+                </div>
+                <div class="learn">
+                    <h3>LEARN</h3>
+                    <p><a href="">Easy start</a></p>
+                    <p><a href="">How to buy crypto?</a></p>
+                    <p><a href="">How to withdraw crypto?</a></p>
+                    <p><a href="">Daily reviews</a></p>
+                    <p><a href="">Blog</a></p>
+                    <p><a href="">Crypto research <span class="new">New</span></a></p>
+                    <p><a href="">Video tutorials</a></p>
+                </div>
+                <div class="contact">
+                    <h3>CONTACT</h3>
+                    <p><a href="">+1-844-584-7390</a></p>
+                    <p><a href="">partnership@stormgain.com</a></p>
+                    <p><a href="">careers@stormgain.com</a></p>
+                    <h3>JOin our comunity on </h3>
+                    <p><a href=""><i class="fa-brands fa-telegram"></i>Telegram<i class="fa-solid fa-arrow-right"></i></a></p>
+                </div>
+            </div>
+            <p class="footer-p">Cryptocurrencies and derivative instruments based on cryptocurrencies are
+                 complex instruments and come with a high risk of losing money rapidly
+                  due to leverage and extreme asset volatility. You should carefully 
+                  consider whether you fully understand how cryptocurrency trading works and whether you can 
+                afford to take the high risk of losing all your invested money.
+            </p>
+            <p class="footer-p"><span class="juris-p">Jurisdictional limitations:</span> Stormgain services are not intended
+                 for use in the European Union. Furthermore, Stormgain services 
+                 are not available in countries identified by FATF as high-risk 
+                 and non-cooperative jurisdictions with strategic AML/CFT deficiencies;
+                 and countries under international sanctions.
+            </p>
+            <p class="footer-p footer-p-last">STORMGAIN LLC Hinds Building, Kingstown, St. Vincent and the Grenadines 
+                Company No. 312 LLC 2020 © 2022 StormGain.
+            </p>
+        </div>
+
+    </main>
+
+    
+    <script src="Script/index.js"></script>
+</body>
+</html>

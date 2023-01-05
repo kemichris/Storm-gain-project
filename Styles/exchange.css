@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    /* background-color: #08203c; */
+    font-family: 'IBM Plex Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Styling for the Nav Bar */
+
+.nav-bar {
+    position: fixed;
+    height: 72px;
+    background-color: #08203c;
+    width: 100%;
+    padding:  0.5rem 1rem;
+    z-index: 2;
+ 
+}
+
+.nav-bar, .nav-bar ul, .navbar-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    cursor: pointer;
+    
+}
+
+.nav-bar ul {
+    padding-left: 0;
+}
+
+.nav-bar ul li {
+    margin-left: 0.8rem;
+    color: #13da5a;
+    font-weight: bolder;
+}
+
+.nav-bar ul li:hover {
+    color: #64e691;
+}
+
+/* styling for navbar buttons */
+
+.sgn-in-btn, .get-started-btn {
+    padding: 0.5rem 0.8rem;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    color: #13da5a;
+    border: 1px solid #13da5a;
+    background-color: transparent;
+    font-weight: bolder;
+    font-family: 'IBM Plex Sans', sans-serif;
+    cursor: pointer;
+}
+
+
+.get-started-btn {
+    background-color: #13da5a;
+    color: black;
+    margin-left: 1rem;
+}
+
+.sgn-in-btn:hover {
+    color: #64e691;
+    border: 1px solid #64e691;
+}
+
+.get-started-btn:hover {
+    background-color: #64e691;
+    border: 1px solid #64e691;
+    padding: 0.8rem 1.3rem;
+    margin-left: 0;
+    margin-right: -0.3rem;
+}
+
+
+.en {
+    margin-right: 3rem;
+}
+
+.product-active {
+    position: fixed;
+    top: 14%;
+    left: 3%;
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: #102743;
+    padding: 1.5rem 2rem;
+    z-index: 3;
+}
+
+.active.product-active {
+    visibility: hidden;
+}
+
+.product-icons, .product-icons1, .earn-icons, .easy-icons, .academy-icons, .company-icons {
+    margin-bottom: 1.2rem;
+    align-items: center;
+    display: flex;
+}
+
+.product-icons img, .product-icons1 img, .earn-icons img, .easy-icons img, .academy-icons img, .company-icons img {
+    background-color: #213750;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-right: 0.7rem;
+}
+
+.product-sec-2 .product-icons img {
+    background-color: transparent;
+    padding: 0;
+}
+
+.product-icons a, .product-icons1 a, .earn-icons a, .easy-icons a, .academy-icons a, .company-icons a, .download-icons a {
+    text-decoration: none;
+    color: #13da5a;
+}
+
+.product-sec-2 {
+    border: 1px solid #213750;
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    margin-left: 2.5rem;
+}
+
+.earn-active {
+    position: fixed;
+    top: 14%;
+    left: 16%;
+    width: auto;
+    height: auto;
+    background-color: #102743;
+    padding: 1.5rem 2rem;
+    z-index: 3;
+}
+
+.active.earn-active {
+    visibility: hidden;
+}
+
+.easy-active {
+    position: fixed;
+    top: 14%;
+    left: 20.5%;
+    width: auto;
+    height: auto;
+    background-color: #102743;
+    padding: 1.5rem 2rem;
+    z-index: 3;
+}
+
+.active.easy-active {
+    visibility: hidden;
+}
+
+.academy-active {
+    position: fixed;
+    top: 14%;
+    left: 28%;
+    width: auto;
+    height: auto;
+    background-color: #102743;
+    padding: 1.5rem 2rem;
+    z-index: 3;
+}
+
+.active.academy-active {
+    visibility: hidden;
+}
+
+.company-active {
+    position: fixed;
+    top: 14%;
+    left: 35.5%;
+    width: auto;
+    height: auto;
+    background-color: #102743;
+    padding: 1.5rem 2rem;
+    z-index: 3;
+}
+
+.active.company-active {
+    visibility: hidden;
+}
+
+.download-active {
+    position: fixed;
+    box-sizing: border-box;
+    top: 14%;
+    left: 59%;
+    width: fit-content;
+    height: fit-content;
+    background-color: #102743;
+    padding: 2rem;
+    display: flex;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+.download-sec2, .download-sec3 {
+    margin-left: 2rem;
+}
+
+.download-sec1, .download-sec2 {
+    width: 200pxpx;
+}
+
+.download-sec1 p, .download-sec2 p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #959dae;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.download-sec1 p i, .download-sec2 p i {
+    font-size: 0.5rem;
+    
+}
+
+.star-1 {
+    margin-left: 0.3rem;
+}
+
+
+.download-icons {
+    display: flex;
+    align-items: center;
+}
+
+.download-icons img {
+    margin-right: 1rem;
+}
+
+.download-sec3 {
+    height: 111px;
+    width: 111px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-sec3 img {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-bottom: 0;
+}
+
+.download-sec3 p {
+    color: #959dae;
+    font-size: 0.65rem;
+    margin-top: 0;
+
+}
+
+.active.download-active {
+    visibility: hidden;
+}
+
+
+/* End of the navbar styling */
+
+/* styling for the header sectioin */
+
+.top-container {
+    padding-top: 10rem;
+    background-image: linear-gradient( #3a4d96, #131B3B);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.top-container h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: white;
+}
+
+.top-container-divflex {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+
+.top-container-div {
+    width: 309.328px;
+    height: 157.750px;
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.top-container-div p {
+    color: white;
+    font-weight: 700;
+}
+
+.btn-get-started {
+    padding: 24px 48px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    background-color: #13da5a;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 3rem;
+}
+/* end of header styling */
+
+/* styling for exchange crypto section  */
+
+.crypto-exchange-cont {
+    background-color: #101729;
+    margin-top: -2.2rem;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.crypto-exchange-cont h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    width: 848px;
+}
+
+/* .volatility-txt {
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    margin-left: 3rem;
+    margin-top: 18rem;
+} */
+
+table {
+    width: 65%;
+    background-color: #193049;
+    border: 1px solid #213750;
+    margin: 0 4rem;
+    border-spacing: 0;
+    cursor: pointer;
+}
+
+.th {
+    height: 37.16px;
+    text-align: center;
+    background-color: #292F36;
+}
+
+.th th {
+    color: #8590A4;
+    font-weight: 400;
+    font-size: 0.75rem;
+    padding-left: 1rem;
+}
+
+.expair {
+    text-align: left;
+}
+
+.price {
+    width: 15rem;
+}
+
+td {
+    border-top: 1px solid #3f5977;;
+    height: 94px;
+    align-items: center;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #0c1936;
+}
+
+td img {
+    width: 36px;
+    height: 36px;
+    margin-left: 0.5rem;
+}
+
+.td-flex {
+    display: flex;
+    align-items: center;
+}
+
+.sushi h3, .sushi p {
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.sushi h3 {
+    color: white;
+}
+
+.sushi p {
+    color: #8590A4;
+}
+
+.volatility-end {
+    background-color: #043D75;
+    padding: 0.5rem;
+    color: #90B0C9;
+    border-radius: 5px;
+}
+
+.cost {
+    color: white;
+}
+
+.change {
+    color: red;
+}
+/* end of volatility styling */

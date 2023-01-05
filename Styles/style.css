@@ -1,0 +1,994 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    background-color: #08203c;
+    font-family: 'IBM Plex Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Styling for the Nav Bar */
+
+.nav-bar {
+    position: fixed;
+    height: 72px;
+    background-color: #08203c;
+    width: 100%;
+    padding:  0.5rem 1rem;
+    z-index: 2;
+ 
+}
+
+.nav-bar, .nav-bar ul, .navbar-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    cursor: pointer;
+    
+}
+
+.nav-bar ul {
+    padding-left: 0;
+}
+
+.nav-bar ul li {
+    margin-left: 0.8rem;
+    color: #13da5a;
+    font-weight: bolder;
+}
+
+.nav-bar ul li:hover {
+    color: #64e691;
+}
+
+/* styling for navbar buttons */
+
+.sgn-in-btn, .get-started-btn {
+    padding: 0.5rem 0.8rem;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    color: #13da5a;
+    border: 1px solid #13da5a;
+    background-color: transparent;
+    font-weight: bolder;
+    font-family: 'IBM Plex Sans', sans-serif;
+    cursor: pointer;
+}
+
+
+.get-started-btn {
+    background-color: #13da5a;
+    color: black;
+    margin-left: 1rem;
+}
+
+.sgn-in-btn:hover {
+    color: #64e691;
+    border: 1px solid #64e691;
+}
+
+.get-started-btn:hover {
+    background-color: #64e691;
+    border: 1px solid #64e691;
+    padding: 0.8rem 1.3rem;
+    margin-left: 0;
+    margin-right: -0.3rem;
+}
+
+
+.en {
+    margin-right: 3rem;
+}
+
+.product-active {
+    position: fixed;
+    top: 14%;
+    left: 3%;
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: #102743;
+    padding: 1.5rem 2rem;
+    z-index: 3;
+}
+
+.active.product-active {
+    visibility: hidden;
+}
+
+.product-icons, .product-icons1, .earn-icons, .easy-icons, .academy-icons, .company-icons {
+    margin-bottom: 1.2rem;
+    align-items: center;
+    display: flex;
+}
+
+.product-icons img, .product-icons1 img, .earn-icons img, .easy-icons img, .academy-icons img, .company-icons img {
+    background-color: #213750;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-right: 0.7rem;
+}
+
+.product-sec-2 .product-icons img {
+    background-color: transparent;
+    padding: 0;
+}
+
+.product-icons a, .product-icons1 a, .earn-icons a, .easy-icons a, .academy-icons a, .company-icons a, .download-icons a {
+    text-decoration: none;
+    color: #13da5a;
+}
+
+.product-sec-2 {
+    border: 1px solid #213750;
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    margin-left: 2.5rem;
+}
+
+.earn-active {
+    position: fixed;
+    top: 14%;
+    left: 16%;
+    width: auto;
+    height: auto;
+    background-color: #102743;
+    padding: 1.5rem 2rem;
+    z-index: 3;
+}
+
+.active.earn-active {
+    visibility: hidden;
+}
+
+.easy-active {
+    position: fixed;
+    top: 14%;
+    left: 20.5%;
+    width: auto;
+    height: auto;
+    background-color: #102743;
+    padding: 1.5rem 2rem;
+    z-index: 3;
+}
+
+.active.easy-active {
+    visibility: hidden;
+}
+
+.academy-active {
+    position: fixed;
+    top: 14%;
+    left: 28%;
+    width: auto;
+    height: auto;
+    background-color: #102743;
+    padding: 1.5rem 2rem;
+    z-index: 3;
+}
+
+.active.academy-active {
+    visibility: hidden;
+}
+
+.company-active {
+    position: fixed;
+    top: 14%;
+    left: 35.5%;
+    width: auto;
+    height: auto;
+    background-color: #102743;
+    padding: 1.5rem 2rem;
+    z-index: 3;
+}
+
+.active.company-active {
+    visibility: hidden;
+}
+
+.download-active {
+    position: fixed;
+    box-sizing: border-box;
+    top: 14%;
+    left: 59%;
+    width: fit-content;
+    height: fit-content;
+    background-color: #102743;
+    padding: 2rem;
+    display: flex;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+.download-sec2, .download-sec3 {
+    margin-left: 2rem;
+}
+
+.download-sec1, .download-sec2 {
+    width: 200pxpx;
+}
+
+.download-sec1 p, .download-sec2 p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #959dae;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.download-sec1 p i, .download-sec2 p i {
+    font-size: 0.5rem;
+    
+}
+
+.star-1 {
+    margin-left: 0.3rem;
+}
+
+
+.download-icons {
+    display: flex;
+    align-items: center;
+}
+
+.download-icons img {
+    margin-right: 1rem;
+}
+
+.download-sec3 {
+    height: 111px;
+    width: 111px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-sec3 img {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-bottom: 0;
+}
+
+.download-sec3 p {
+    color: #959dae;
+    font-size: 0.65rem;
+    margin-top: 0;
+
+}
+
+.active.download-active {
+    visibility: hidden;
+}
+
+
+/* End of the navbar styling */
+
+/* Styling for the header  */
+
+.label {
+    width: 268px;
+    height: 50px;
+    padding: 8px;
+    top: 20%;
+    left: 38%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #101729;
+    position: absolute;
+    cursor: pointer;
+}
+
+.input {
+    visibility: hidden;
+}
+
+.cex, .dex {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 50px 12px 45px
+}
+
+.label .cex, .label .dex {
+    font-size: 1.125rem;
+    color: #044F9C;
+}
+
+.swith-circle {
+    position: absolute;
+    padding: 12px 50px 12px 45px;
+    background-color: #3B66D6;
+    height: 29px;
+    width: 40px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: toggleOff linear forwards;
+}
+
+.swith-circle h3 {
+    font-size: 1.125rem;
+    color: white;
+}
+
+.input:checked + .label .swith-circle {
+    animation: toggleOn linear forwards;
+}
+
+@keyframes toggleOn {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(134px);
+    }
+    
+}
+
+@keyframes toggleOff {
+    0%{
+        transform: translateX(134px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
+}
+
+.top-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 700px;
+    color: white;
+    margin-top: -0.3rem;
+
+}
+
+.top-container, .top-container-dex {
+    margin-top: 15rem;
+    padding: 0 0 0 3rem;
+    display: flex;
+}
+
+.top-container-dex {
+    position: absolute;
+    top: 3%;
+    background-color: #08203c;
+}
+
+.active.top-container-dex {
+    visibility: hidden;
+}
+
+.top-container img {
+    width: 800px;
+}
+
+.top-content p {
+    color: white;
+    margin-right: 2rem;
+}
+
+.starnow-btn {
+    padding: 0.8rem 1.8rem;
+    border-radius: 1.5rem;
+    font-size: 1.125rem;
+    color: black;
+    border: 1px solid #13da5a;
+    background-color: #13da5a;
+    font-weight: bolder;
+    font-family: 'IBM Plex Sans', sans-serif;
+    cursor: pointer;
+    margin-top: 3rem;
+}
+
+.starnow-btn:hover {
+    background-color: #64e691;
+}
+
+.top-content ul li {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.top-content ul {
+    list-style: none;
+    
+}
+
+.top-content ul li::before {
+    content: "\2022";
+    color: #13da5a;
+    display: inline-block;
+    width: 1em
+
+}
+
+.dex-read-trust {
+    display: flex;
+    width: 422.391px;
+    height: 129.875;
+    border: 1px solid #303D5F;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 3rem;
+}
+
+.dex-read-trust .read {
+    border-right: 1px solid #303D5F;
+    margin-right: 2rem;
+}
+
+.dex-read-trust div p {
+    font-size: 0.75rem;
+    width: 163px;
+}
+
+.top-content a {
+    font-size: 1.125rem;
+    color: #13da5a;
+    text-decoration: none;
+    margin-left: 1.5rem;
+}
+/* end of header styling */
+
+/* styling for the volume section */
+
+.coin-container {
+    display: flex;
+    margin: 9rem 3rem;
+    border: 1px solid #213750;
+    height: 112px;
+}
+
+.btc img, .eth img, .ltc img, .doge img {
+    width: 36px;
+    height: 36px;
+    margin-right: 1rem;
+}
+
+.eth, .ltc, .doge {
+    margin-left: 5rem;
+}
+
+.btc {
+    margin-left: 2rem;
+}
+
+
+.btc, .eth, .ltc, .doge {
+    display: flex;
+    align-items: center;
+}
+
+.btc h4, .eth h4, .ltc h4, .doge h4 {
+    color: #13da5a;
+}
+
+.volume {
+    color: #13da5a;
+    position: absolute;
+    z-index: 1;
+    left: 5rem;
+    top: 147%;
+    background-color: #08203c;
+    padding: 0 1rem;
+}
+
+.volume-amount {
+    color: white;
+}
+
+.volume-days {
+    color: #5D7176;
+}
+/* end of volume styling */
+
+/* styling for the product section */
+
+.storm-products {
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    margin-left: 3rem;
+}
+
+.grid-container {
+    display: grid;
+    gap: 1.5rem;
+    margin: 3rem;
+    grid-template-rows: 213px 90px 213px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.mining {
+    background: url("https://stormgain.com/themes/custom/stormgain_blue/img/background/mining-bg2.png");
+    height: 164px;
+    grid-column: span 2;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 30px 28px;
+}
+
+.futures {
+    background: url("https://stormgain.com/themes/custom/stormgain_blue/img/background/futures-bg.png");
+    grid-row: span 3;
+    height: 608px;
+    border-radius: 10px;
+    padding: 30px 28px;
+    background-size: cover;
+}
+
+.exchange {
+    background: url("https://stormgain.com/themes/custom/stormgain_blue/img/background/exchange-bg.png");
+    background-size: contain;
+    background-color: #064D52;
+    height: 267px;
+    grid-row: span 2;
+    border-radius: 10px;
+    padding: 30px 28px;
+}
+
+.platform {
+    background: url("https://stormgain.com/themes/custom/stormgain_blue/img/background/platform-bg.png");
+    background-position: bottom;
+    background-color: #213750;
+    grid-column: 2;
+    grid-row: 3;
+    height: 253px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 30px 28px;
+    
+}
+
+.signals {
+    height: 354px;
+    background: url("https://stormgain.com/themes/custom/stormgain_blue/img/background/signals-bg.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    border: 1px solid #213750;
+    border-radius: 10px;
+    grid-row: span 2;
+    grid-column: 3;
+    border-radius: 10px;
+    padding: 30px 28px;
+}
+
+.wallets {
+    background: url("https://stormgain.com/themes/custom/stormgain_blue/img/background/wallets-bg.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 354px;
+    background-color: #303D5F;
+    border-radius: 10px;
+    padding: 30px 28px;
+}
+
+.futures h3, .exchange h3, .mining h3, .platform h3, .signals h3, .wallets h3 {
+    color: white;
+    font-size: 1.25rem;
+}
+
+.futures-txt, .signals-txt, .wallets-txt {
+    border: 1px solid #566F8B;
+    padding: 0.2rem 1rem;
+    width: 5.4rem;
+    border-radius: 10px;
+    
+}
+
+.futures p, .exchange p, .mining p, .signals p, .wallets p {
+    color: #8590A4;
+    font-weight: 600;
+}
+
+.futures a, .exchange a, .mining a, .platform a, .signals a, .wallets a {
+    color: #13da5a;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.futures a i, .exchange a i, .mining a i, .platform a i, .signals a i, .wallets a i {
+    font-size: 0.6rem;
+}
+
+.btc-usdt {
+    display: flex;
+}
+
+.exchange-img {
+    margin: 0 0.4rem;
+}
+
+.btc-txt, .usdt-txt {
+    margin-left: 0.3rem;
+}
+
+.exchange-txt, .platform-txt {
+    border: 1px solid #566F8B;
+    padding: 0.2rem 1rem;
+    width: 6.5rem;
+    border-radius: 10px;
+}
+
+.mining p {
+    width: 336px;
+}
+
+.mining .earn-txt {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.mining-txt {
+    border: 1px solid #566F8B;
+    padding: 0.2rem 1rem;
+    width: 4.8rem;
+    border-radius: 10px;
+    margin-bottom: 0;
+}
+
+.free-txt {
+    color: #13da5a;
+}
+
+.platform-img img {
+    margin-left: 0.5rem;
+}
+
+.platform-img .web-img {
+    margin-left: 0;
+}
+
+.platform-img {
+    margin-bottom: 1rem;
+}
+
+.futures:hover, .exchange:hover, .mining:hover, .platform:hover, .signals:hover, .wallets:hover {
+    margin-top: -0.5rem;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, .3) ;
+}
+/* end of product styling */
+
+/* Styling for market volatility section */
+
+.volatility-txt {
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    margin-left: 3rem;
+    margin-top: 18rem;
+}
+
+table {
+    width: 90%;
+    border: 1px solid #213750;
+    margin: 0 4rem;
+    border-spacing: 0;
+    cursor: pointer;
+}
+
+.th {
+    height: 69px;
+    text-align: left;
+    background-color: #101A31;
+}
+
+.th th {
+    color: #8590A4;
+    font-weight: 400;
+    font-size: 0.75rem;
+    padding-left: 1rem;
+}
+
+td {
+    border-top: 1px solid #213750;;
+    height: 94px;
+    align-items: center;
+}
+
+tr:hover {
+    background-color: #0c1936;
+}
+
+td img {
+    width: 36px;
+    height: 36px;
+    margin-left: 0.5rem;
+}
+
+.td-flex {
+    display: flex;
+    align-self: center;
+}
+
+.sushi h3, .sushi p {
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.sushi h3 {
+    color: white;
+}
+
+.sushi p {
+    color: #8590A4;
+}
+
+.volatility-end {
+    background-color: #043D75;
+    padding: 0.5rem;
+    color: #90B0C9;
+    border-radius: 5px;
+}
+
+.cost {
+    color: white;
+}
+
+.change {
+    color: red;
+}
+/* end of volatility styling */
+
+/* styling for review section */
+
+.review-txt {
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    margin-left: 3rem;
+    margin-top: 5rem;
+}
+
+.review-container {
+    background: url("https://stormgain.com/themes/custom/stormgain_blue/img/background/review-bg.png");
+    height: 270px;
+    width: 90%;
+    margin: 0 3rem;
+    border: 1px solid #213750;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.review-container h3 {
+    font-size: 1.75rem;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.review-container p {
+    margin-top: 0;
+    font-size: 1.125rem;
+    color: #8590A4;
+}
+
+.feedback-container {
+    display: flex;
+    width: 99%;
+    margin: 2rem 3rem;
+}
+
+.review1, .review2, .review3 {
+    width: 358px;
+    height: 148;
+    background-color: #213750;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+
+.review2, .review3 {
+    margin-left: 2.5rem;
+}
+
+.img-user {
+    display: flex;
+    align-items: center;
+}
+
+.user-rating {
+    margin-left: 1rem; 
+}
+
+.user-rating p {
+    margin-bottom: 0;
+}
+
+.review1 h3, .review2 h3, .review3 h3 {
+    color: white;
+    font-size: 1.125rem;
+}
+
+.review1 p, .review2 p, .review3 p{
+    color: #8590A4;
+}
+
+.review1:hover, .review2:hover, .review3:hover {
+    filter: brightness(1.1);
+}
+/* end of review styling */
+
+/* styling for partnership section */
+
+.partnership-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 12rem 0;
+}
+/* edn of partnership section */
+
+/* Styling for the News and blog  */
+
+.news-txt, .blog-txt {
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 4.5rem;
+}
+
+.news-blog {
+    display: flex;
+    width: 90%;
+    margin: 0 3rem;
+}
+
+.img1 img, .img2 img {
+    width: 277px;
+    height: 143px;
+    border-radius: 10px;
+}
+
+.img2 {
+    margin-left: 2rem;
+}
+
+.news-img, .blog-img {
+    display: flex;
+}
+
+.Blog {
+    margin-left: 4rem;
+}
+
+.date {
+    color: #8590A4;
+
+}
+
+.img1 p a, .img2 p a {
+    color: #13da5a;
+    text-decoration: none;
+}
+
+.allnews-btn {
+    width: 100%;
+    color: #13da5a;
+    font-size: 1rem;
+    padding: 11px 0;
+    background-color: transparent;
+    border-top: 1px solid #213750;
+    border-bottom: 1px solid #213750;
+    border-left: none;
+    border-right: none;
+}
+
+.img1 p a:hover, .img2 p a:hover, .allnews-btn:hover {
+    color: #64e691;
+}
+/* end of styling for the news and blog */
+
+/* styling for the call to action */
+
+.call-to-action-txt {
+    color: white;
+    font-size: 3.5rem;
+    margin-top: 12rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    font-weight: 800;
+}
+/* end of call to action styling  */
+
+/* styling for the bottom container */
+
+.bottom-container {
+    background-color: #101729;
+    margin-bottom: 0;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+   margin-left: 4rem;
+   padding-top: 3rem;
+}
+
+.bottom-logon{
+    width: 180px;
+    height: 32px;
+}
+
+.social-icons {
+    width: 17px;
+    height: 15px;
+    margin-left: 1rem;
+}
+
+.social-icons1 {
+    margin-left: 3rem;
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 3rem 2rem 1rem;
+
+}
+
+.content-section h3 {
+    color: #B8C0D2;
+    font-size: 0.875;
+}
+
+.content-section p a {
+    color: #13da5a;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.content-section p a:hover {
+    color: #108538;
+}
+
+.resources .new, .learn .new {
+    background-color: #044F9C;
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.3rem;
+    border-radius: 3px;
+}
+
+.footer-p {
+    color: #8590A4;
+    font-size: 0.9rem;
+    margin: 0rem 3rem 1rem 4rem;
+    text-align: center;
+}
+
+.juris-p {
+    color: #959dae;;
+    font-weight: bolder;
+}
+
+.footer-p-last {
+    padding-bottom: 3rem;
+}
+
+.fa-telegram {
+    margin-right: 1rem;
+    font-size: 1.3rem;
+}
+
+.fa-arrow-right {
+    margin-left: 1rem;
+    font-size: 1.3rem;
+}
+/* end of bottom container styling */
