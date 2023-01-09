@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    /* background-color: #08203c; */
+    background-color: #101729;
     font-family: 'IBM Plex Sans', sans-serif;
     overflow-x: hidden;
 }
@@ -321,7 +321,7 @@ body {
 .crypto-exchange-cont {
     background-color: #101729;
     margin-top: -2.2rem;
-    padding: 80px 0;
+    padding: 80px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -334,14 +334,6 @@ body {
     text-align: center;
     width: 848px;
 }
-
-/* .volatility-txt {
-    font-size: 2rem;
-    font-weight: 800;
-    color: white;
-    margin-left: 3rem;
-    margin-top: 18rem;
-} */
 
 table {
     width: 63%;
@@ -436,3 +428,241 @@ td img {
     cursor: pointer;
     margin-bottom: 8rem;
 }
+
+.convert-p {
+    font-size: 1.375rem;
+    text-align: center;
+    margin: 0 6rem;
+    color: #959dae;
+    margin-bottom: 2rem;
+}
+
+.convert-flex {
+    width: 320px;
+    height: 60px;
+    display: flex;
+    padding: 1rem;
+    background-color: #08203C;
+    align-items: center;
+}
+
+.img-cont img {
+    width: 30px;
+    height: 30px;
+}
+
+.top-img {
+    position: absolute;
+    z-index: 1;
+    left: 9%;
+    bottom: -164%;
+   
+}
+
+.top-img2 {
+    position: absolute;
+    z-index: 1;
+    bottom: -164%;
+    left: 37.5%;
+}
+
+.top-img3 {
+    position: absolute;
+    z-index: 1;
+    bottom: -164%;
+    right: 31.5%;
+}
+
+.top-img4{
+    position: absolute;
+    z-index: 1;
+    left: 9%;
+    bottom: -184%;
+}
+
+.top-img5 {
+    position: absolute;
+    z-index: 1;
+    bottom: -184%;
+    left: 37.5%;
+}
+
+.top-img6 {
+    position: absolute;
+    z-index: 1;
+    bottom: -184%;
+    right: 31.5%;
+}
+
+.convert1, .convert2 {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.convert-flex2 {
+    margin-left: 2rem;
+}
+
+.text-div {
+    margin-left: 1rem;
+}
+
+.text-div h3 {
+    margin-bottom: 0;
+    color: white;
+}
+
+.text-div p {
+    margin-top: 0.2rem;
+    color: white;
+}
+
+.convert-flex i {
+    margin-top: 3rem;
+    margin-left: 4rem;
+    color: #13da5a;
+}
+
+.crypto-exchange-cont .viewmore {
+    border: 1px solid #13da5a;
+    padding: 1.5rem 2rem;
+    margin-bottom: 5rem;
+}
+/* end of styling for the exchange crypto section */
+
+/* Styling for the FAQ section */
+
+.faq-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #08203C;
+}
+
+.faq-container h2 {
+    font-size: 2.625rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 4rem;
+}
+
+.faq-content1, .faq-content2, .faq-content3, .faq-content4, .faq-content5, .faq-content6 {
+    width: 40.5rem;
+    height: 3.75rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #2b425c;
+}
+
+.faq-container h3 {
+    margin-top: 0;
+    color: #13da5a;
+    font-size: 1.375rem;
+    cursor: pointer;
+}
+
+.faq-container i {
+    font-size: 1.3rem;
+    color: #13da5a;
+    cursor: pointer;
+}
+/* end of styling for the faq section */
+
+/* Styling for the News and blog  */
+
+.news-txt, .blog-txt {
+    font-size: 2.625rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.news-blog {
+    display: flex;
+    padding: 5rem 3rem;
+    background-color: #08203C;
+}
+
+.img1 img, .img2 img {
+    width: 277px;
+    height: 143px;
+    border-radius: 10px;
+}
+
+.img2 {
+    margin-left: 2rem;
+}
+
+.news-img, .blog-img {
+    display: flex;
+}
+
+.Blog {
+    margin-left: 4rem;
+}
+
+.date {
+    color: #8590A4;
+
+}
+
+.img1 p a, .img2 p a {
+    color: #13da5a;
+    text-decoration: none;
+}
+
+.allnews-btn {
+    width: 100%;
+    color: #13da5a;
+    font-size: 1rem;
+    padding: 11px 0;
+    background-color: transparent;
+    border-top: 1px solid #213750;
+    border-bottom: 1px solid #213750;
+    border-left: none;
+    border-right: none;
+}
+
+.img1 p a:hover, .img2 p a:hover, .allnews-btn:hover {
+    color: #64e691;
+}
+/* end of styling for the news and blog */
+
+/* styling for the course sectoin  */
+
+.course-container {
+    display: flex;
+    background-color: #101A31;
+    padding: 5rem 0;
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+.course-container img {
+    width: 32.063rem;
+    height: 22.656rem;
+    border-radius: 1rem;
+}
+
+.text-more {
+    width: 34.063rem;
+    height: 22.656rem;
+    margin-left: 3rem;
+}
+
+.text-more h2 {
+    font-size: 3rem;
+    color: white;
+}
+
+.text-more button {
+    padding: 1.5rem 3rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.text-more button i {
+    margin-left: 0.5rem;
+}
+/* end of styling for the course section */
