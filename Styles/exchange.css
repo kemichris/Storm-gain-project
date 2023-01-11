@@ -271,6 +271,7 @@ body {
 
 .top-container {
     padding-top: 10rem;
+    padding-bottom: 6.125rem;
     background-image: linear-gradient( #3a4d96, #131B3B);
     display: flex;
     flex-direction: column;
@@ -444,6 +445,11 @@ td img {
     padding: 1rem;
     background-color: #08203C;
     align-items: center;
+    cursor: pointer;
+}
+
+.convert-flex:hover {
+    background-color: #044F9C;
 }
 
 .img-cont img {
@@ -455,21 +461,21 @@ td img {
     position: absolute;
     z-index: 1;
     left: 9%;
-    bottom: -164%;
+    bottom: -180%;
    
 }
 
 .top-img2 {
     position: absolute;
     z-index: 1;
-    bottom: -164%;
+    bottom: -180%;
     left: 37.5%;
 }
 
 .top-img3 {
     position: absolute;
     z-index: 1;
-    bottom: -164%;
+    bottom: -180%;
     right: 31.5%;
 }
 
@@ -477,20 +483,20 @@ td img {
     position: absolute;
     z-index: 1;
     left: 9%;
-    bottom: -184%;
+    bottom: -200%;
 }
 
 .top-img5 {
     position: absolute;
     z-index: 1;
-    bottom: -184%;
+    bottom: -200%;
     left: 37.5%;
 }
 
 .top-img6 {
     position: absolute;
     z-index: 1;
-    bottom: -184%;
+    bottom: -200%;
     right: 31.5%;
 }
 
@@ -546,11 +552,14 @@ td img {
     margin-bottom: 4rem;
 }
 
-.faq-content1, .faq-content2, .faq-content3, .faq-content4, .faq-content5, .faq-content6 {
-    width: 40.5rem;
-    height: 3.75rem;
+.fa-content-flex {
     display: flex;
     justify-content: space-between;
+}
+
+.faq-content1, .faq-content2, .faq-content3, .faq-content4, .faq-content5, .faq-content6 {
+    width: 40.5rem;
+    height: 3.75rem; /*10.563rem 3.75*/
     margin-bottom: 2rem;
     border-bottom: 1px solid #2b425c;
 }
@@ -566,6 +575,47 @@ td img {
     font-size: 1.3rem;
     color: #13da5a;
     cursor: pointer;
+}
+
+.faq-paragraph p {
+    font-size: 1.125rem;
+    color: #b8c0d2;
+}
+
+.paragraph4 p a, .paragraph6 p a {
+    color: #13da5a;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.active.faq-content1, .active.faq-content2, .active.faq-content3, .active.faq-content4, .active.faq-content5, .active.faq-content6 {
+    height: 10.563rem;
+    padding-bottom: 1rem;
+}
+
+.active.faq-content3 {
+    height: 11.563rem;
+    
+}
+
+.active.faq-content4 {
+    height: 13.563rem;
+}
+
+.active.faq-content6 {
+    height: 32rem;
+}
+
+.active.faq-paragraph {
+    visibility: hidden;
+}
+
+.active.icon-dropdown1 {
+    visibility: hidden;
+}
+
+.active.x-mark {
+    visibility: hidden;
 }
 /* end of styling for the faq section */
 
@@ -666,3 +716,128 @@ td img {
     margin-left: 0.5rem;
 }
 /* end of styling for the course section */
+
+/* styling for the call to action */
+
+.call-container {
+    background-image: linear-gradient( #3a4d96, #131B3B);
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.call-container h3 {
+    font-size: 2.9rem;
+    width: 65rem;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.call-container p {
+    font-size: 1.375rem;
+    color: #959dae;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.call-container button {
+    padding: 1.5rem 3rem;
+    background-color: #13da5a;
+    border: none;
+    font-size: 1.125rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.call-container button:hover {
+    background-color: #64e691;
+}
+
+/* styling for the bottom container */
+
+.bottom-container {
+    background-color: #101729;
+    margin-bottom: 0;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+   margin-left: 4rem;
+   padding-top: 3rem;
+}
+
+.bottom-logon{
+    width: 180px;
+    height: 32px;
+}
+
+.social-icons {
+    width: 17px;
+    height: 15px;
+    margin-left: 1rem;
+}
+
+.social-icons1 {
+    margin-left: 3rem;
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 3rem 2rem 1rem;
+
+}
+
+.content-section h3 {
+    color: #B8C0D2;
+    font-size: 0.875;
+}
+
+.content-section p a {
+    color: #13da5a;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.content-section p a:hover {
+    color: #108538;
+}
+
+.resources .new, .learn .new {
+    background-color: #044F9C;
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.3rem;
+    border-radius: 3px;
+}
+
+.footer-p {
+    color: #8590A4;
+    font-size: 0.9rem;
+    margin: 0rem 3rem 1rem 4rem;
+    text-align: center;
+}
+
+.juris-p {
+    color: #959dae;;
+    font-weight: bolder;
+}
+
+.footer-p-last {
+    padding-bottom: 3rem;
+}
+
+.fa-telegram {
+    margin-right: 1rem;
+    font-size: 1.3rem;
+}
+
+.fa-arrow-right {
+    margin-left: 1rem;
+    font-size: 1.3rem;
+}
+/* end of bottom container styling */
