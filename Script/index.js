@@ -18,12 +18,15 @@ const inputEl = document.getElementById("switch");
 const cexDEx = document.querySelector(".cex-dex");
 
 // FAQ section variables 
+const faqContainer = document.querySelector(".faq-container");
+
 const  faqContent1 = document.querySelector(".faq-content1");
 const  faqContent2 = document.querySelector(".faq-content2");
 const  faqContent3 = document.querySelector(".faq-content3");
 const  faqContent4 = document.querySelector(".faq-content4");
 const  faqContent5 = document.querySelector(".faq-content5");
 const  faqContent6 = document.querySelector(".faq-content6");
+const faqcontent6Trading = document.getElementById("faq-cont6");
 
 const  icon1 = document.querySelector(".icon-dropdown1");
 const  icon2 = document.querySelector(".icon-dropdown2");
@@ -47,6 +50,8 @@ const faContentFlex4 = document.querySelector(".fa-content-flex4");
 const faContentFlex5 = document.querySelector(".fa-content-flex5");
 const faContentFlex6 = document.querySelector(".fa-content-flex6");
 
+const viewMoreBtn = document.getElementById("view-more-btn");
+
 const xIcon1 = document.createElement("i");
 xIcon1.setAttribute("class", "fa-solid fa-xmark x-mark");
 const xIcon2 = document.createElement("i");
@@ -60,7 +65,7 @@ xIcon5.setAttribute("class", "fa-solid fa-xmark x-mark");
 const xIcon6 = document.createElement("i");
 xIcon6.setAttribute("class", "fa-solid fa-xmark x-mark");
 
-
+faqcontent6Trading.remove();
 
 icon1.addEventListener("click", ()=>{
     faqContent1.classList.add("active");
@@ -142,6 +147,23 @@ xIcon6.addEventListener("click", ()=> {
     faContentFlex6.appendChild(icon6);
 });
 
+let toggle =  true;
+
+viewMoreBtn.addEventListener("click", ()=>{
+    toggle? viewMore() : hideMore();
+    toggle = !toggle;
+});
+
+function viewMore() {
+    faqContainer.insertBefore(faqcontent6Trading, faqContainer.children[6]);
+    viewMoreBtn.innerHTML = "Hide More";
+}
+
+function hideMore() {
+    faqcontent6Trading.remove();
+    viewMoreBtn.innerHTML = "View More";
+}
+
 
 productEl.addEventListener("mouseover", ()=>{
     productDropdown.classList.remove("active");
@@ -184,7 +206,6 @@ downloadEl.addEventListener("mouseleave", ()=>{
 
 inputEl.checked = JSON.parse(localStorage.getItem("cex-dex"))
 updateBody();
-
 
 function updateBody() {
     if (inputEl.checked) {
