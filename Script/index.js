@@ -226,4 +226,3 @@ function updateLocalStorage() {
     localStorage.setItem("cex-dex", JSON.stringify(inputEl.checked));
 }
 
-

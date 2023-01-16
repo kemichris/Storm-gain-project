@@ -1,0 +1,819 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    background-color: #101729;
+    font-family: 'IBM Plex Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Styling for the Nav Bar */
+
+.nav-bar {
+    position: fixed;
+    height: 72px;
+    background-color: #08203c;
+    width: 100%;
+    padding:  0.5rem 1rem;
+    z-index: 2;
+ 
+}
+
+.nav-bar, .nav-bar ul, .navbar-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    cursor: pointer;
+    
+}
+
+.nav-bar ul {
+    padding-left: 0;
+}
+
+.nav-bar ul li {
+    margin-left: 0.8rem;
+    color: #13da5a;
+    font-weight: bolder;
+}
+
+.nav-bar ul li:hover {
+    color: #64e691;
+}
+
+/* styling for navbar buttons */
+
+.sgn-in-btn, .get-started-btn {
+    padding: 0.5rem 0.8rem;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    color: #13da5a;
+    border: 1px solid #13da5a;
+    background-color: transparent;
+    font-weight: bolder;
+    font-family: 'IBM Plex Sans', sans-serif;
+    cursor: pointer;
+}
+
+
+.get-started-btn {
+    background-color: #13da5a;
+    color: black;
+    margin-left: 1rem;
+}
+
+.sgn-in-btn:hover {
+    color: #64e691;
+    border: 1px solid #64e691;
+}
+
+.get-started-btn:hover {
+    background-color: #64e691;
+    border: 1px solid #64e691;
+    padding: 0.8rem 1.3rem;
+    margin-left: 0;
+    margin-right: -0.3rem;
+}
+
+
+.en {
+    margin-right: 3rem;
+}
+
+.product-active {
+    position: fixed;
+    top: 14%;
+    left: 3%;
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: #102743;
+    padding: 1.5rem 2rem;
+    z-index: 3;
+}
+
+.active.product-active {
+    visibility: hidden;
+}
+
+.product-icons, .product-icons1, .earn-icons, .easy-icons, .academy-icons, .company-icons {
+    margin-bottom: 1.2rem;
+    align-items: center;
+    display: flex;
+}
+
+.product-icons img, .product-icons1 img, .earn-icons img, .easy-icons img, .academy-icons img, .company-icons img {
+    background-color: #213750;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-right: 0.7rem;
+}
+
+.product-sec-2 .product-icons img {
+    background-color: transparent;
+    padding: 0;
+}
+
+.product-icons a, .product-icons1 a, .earn-icons a, .easy-icons a, .academy-icons a, .company-icons a, .download-icons a {
+    text-decoration: none;
+    color: #13da5a;
+}
+
+.product-sec-2 {
+    border: 1px solid #213750;
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    margin-left: 2.5rem;
+}
+
+.earn-active {
+    position: fixed;
+    top: 14%;
+    left: 16%;
+    width: auto;
+    height: auto;
+    background-color: #102743;
+    padding: 1.5rem 2rem;
+    z-index: 3;
+}
+
+.active.earn-active {
+    visibility: hidden;
+}
+
+.easy-active {
+    position: fixed;
+    top: 14%;
+    left: 20.5%;
+    width: auto;
+    height: auto;
+    background-color: #102743;
+    padding: 1.5rem 2rem;
+    z-index: 3;
+}
+
+.active.easy-active {
+    visibility: hidden;
+}
+
+.academy-active {
+    position: fixed;
+    top: 14%;
+    left: 28%;
+    width: auto;
+    height: auto;
+    background-color: #102743;
+    padding: 1.5rem 2rem;
+    z-index: 3;
+}
+
+.active.academy-active {
+    visibility: hidden;
+}
+
+.company-active {
+    position: fixed;
+    top: 14%;
+    left: 35.5%;
+    width: auto;
+    height: auto;
+    background-color: #102743;
+    padding: 1.5rem 2rem;
+    z-index: 3;
+}
+
+.active.company-active {
+    visibility: hidden;
+}
+
+.download-active {
+    position: fixed;
+    box-sizing: border-box;
+    top: 14%;
+    left: 59%;
+    width: fit-content;
+    height: fit-content;
+    background-color: #102743;
+    padding: 2rem;
+    display: flex;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+.download-sec2, .download-sec3 {
+    margin-left: 2rem;
+}
+
+.download-sec1, .download-sec2 {
+    width: 200pxpx;
+}
+
+.download-sec1 p, .download-sec2 p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #959dae;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.download-sec1 p i, .download-sec2 p i {
+    font-size: 0.5rem;
+    
+}
+
+.star-1 {
+    margin-left: 0.3rem;
+}
+
+
+.download-icons {
+    display: flex;
+    align-items: center;
+}
+
+.download-icons img {
+    margin-right: 1rem;
+}
+
+.download-sec3 {
+    height: 111px;
+    width: 111px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-sec3 img {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-bottom: 0;
+}
+
+.download-sec3 p {
+    color: #959dae;
+    font-size: 0.65rem;
+    margin-top: 0;
+
+}
+
+.active.download-active {
+    visibility: hidden;
+}
+/* End of the navbar styling */
+
+/* styling for the header sectioin */
+
+.top-container {
+    background-image: linear-gradient( #192862, #131B3B);
+    display: flex;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+.top-content {
+    margin-left: 7rem;
+    padding-top: 5rem;
+}
+
+.top-content img {
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 0;
+}
+
+.top-content h1 {
+    font-size: 4.5rem;
+    font-weight: bolder;
+    color: white;
+    margin: 1rem 0;
+}
+
+.top-content p {
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 0;
+}
+
+.top-content button {
+    padding: 1.125rem 1.875rem;
+    background-color: #13da5a;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border: none;
+}
+
+.top-container .img {
+    height: 32.188rem;
+    margin-right: -22rem;
+}
+/* end of styling for the header section  */
+
+/* styling for multi wallet  */
+
+.multi-wallet-container {
+    width: 70rem;
+    padding: 5rem 2.5rem;
+    margin: auto;
+}
+
+.multi-wallet-container h2 {
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.multi-wallet-container .multi-wallet-top-p {
+    color: #959dae;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.multi-wallet-container button {
+    padding: 1.5rem 3rem;
+    background-color: #13da5a;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border: none;
+    margin: 0 auto;
+    display: flex;
+}
+
+.multi-wallet-flex {
+    display: flex;
+    margin-top: 5rem;
+}
+
+.multi-wallet-card {
+    width: 11rem;
+    height: 19rem;
+    padding: 1.25rem;
+    background-color: #08203C;
+    margin-right: 0.5rem;
+    border-radius: 10px;
+}
+
+.multi-wallet-card img {
+    margin: 0 auto;
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+}
+
+.multi-wallet-card h3 {
+    color: white;
+    font-size: 1.125rem;
+    font-weight: bolder;
+}
+
+.multi-wallet-card p {
+    color: #959dae;
+    font-size: 1.125rem;
+}
+/* end of styling for multi wallet section  */
+
+/* styling for digit asset  */
+
+.digital-asset-container {
+    background-color: #101A31;
+    padding: 3rem 2.5rem;
+}
+
+.all-in-one-flex {
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.all-in-one-flex img {
+    width: 45.666rem;
+    height: 28.509rem;
+    margin-left: 2.2rem;
+}
+
+.all-in-one-text {
+    width: 23.458rem;
+
+}
+
+.all-in-one-text h2, .digital-asset-container h2 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.all-in-one-text p, .digital-asset-container .digit-p {
+    color: #959dae;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 0;
+}
+
+.all-in-one-text button {
+    font-size: 1.125rem;
+    font-weight: bold;
+    background-color: #13da5a;
+    padding: 1.5rem 3rem;
+    margin: 0 auto;
+    display: flex;
+    border: none;
+}
+
+.digital-asset-container h2 {
+    margin-bottom: 2rem;
+}
+
+.digital-asset-container .digit-p {
+    width: 70rem;
+    margin:0 auto;
+}
+
+.cold-wallet-flex {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.cold-wallet-content {
+    width: 16rem;
+    height: 12.147rem;
+    background-color: #08203C;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cold-wallet-content h3 {
+    font-size: 1.4rem;
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.cold-wallet-content p {
+    color: #959dae;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+.cold-wallet-content a {
+    color: #13da5a;
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+
+.cold-wallet-content a i {
+    margin-left: 0.3rem;
+}
+
+.cold-wallet-content img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.all-wallet-btn {
+    padding: 1.125rem 1.875rem;
+    border: 1px solid #13da5a;
+    background-color: transparent;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #13da5a;
+    cursor: pointer;
+    display: flex;
+    margin: 2rem auto;
+}
+
+.all-wallet-btn:hover {
+    border: 2px solid #13da5a;
+}
+/* end of styling for digital asset section  */
+
+/* styling for faq section  */
+
+.faq-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #101A31;
+}
+
+.faq-container h2 {
+    font-size: 2.625rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 4rem;
+}
+
+.fa-content-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-content1, .faq-content2, .faq-content3, .faq-content4, .faq-content5, .faq-content6 {
+    width: 40.5rem;
+    height: 3.75rem; /*10.563rem 3.75*/
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #2b425c;
+}
+
+.faq-container h3 {
+    margin-top: 0;
+    color: #13da5a;
+    font-size: 1.375rem;
+    cursor: pointer;
+}
+
+.faq-container i {
+    font-size: 1.3rem;
+    color: #13da5a;
+    cursor: pointer;
+}
+
+.faq-paragraph p {
+    font-size: 1.125rem;
+    color: #b8c0d2;
+}
+
+.faq-paragraph ul li {
+    font-size: 1.125rem;
+    color: #b8c0d2;
+    margin-left: -1.2rem;
+}
+
+.paragraph4 p a, .paragraph6 p a {
+    color: #13da5a;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.active.faq-content1, .active.faq-content2, .active.faq-content3, .active.faq-content4, .active.faq-content5, .active.faq-content6 {
+    height: 10.563rem;
+    padding-bottom: 1rem;
+}
+
+.active.faq-content1 {
+    height: 25rem;
+}
+
+.active.faq-content2 {
+    height: 26rem;
+}
+
+.active.faq-content3 {
+    height: 11.563rem;
+    
+}
+
+.active.faq-content4 {
+    height: 19rem;
+}
+
+.active.faq-content5 {
+    height: 21rem;
+}
+
+/* .active.faq-content6 {
+    height: 32rem;
+} */
+
+.active.faq-paragraph {
+    visibility: hidden;
+}
+
+.active.icon-dropdown1 {
+    visibility: hidden;
+}
+
+.active.x-mark {
+    visibility: hidden;
+}
+
+.faq-container button {
+    color: #13da5a;
+    border: 2px solid #13da5a;
+    font-size: 1.125rem;
+    font-weight: bold;
+    padding: 1.125rem 1.875rem;
+    background-color: transparent;
+    margin-bottom: 5rem;
+}
+/* end of styling for the faq section */
+
+/* Styling for the News and blog  */
+
+.news-txt, .blog-txt {
+    font-size: 2.625rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.news-blog {
+    display: flex;
+    padding: 5rem 3rem;
+    background-color: #08203C;
+}
+
+.img1 img, .img2 img {
+    width: 277px;
+    height: 143px;
+    border-radius: 10px;
+}
+
+.img2 {
+    margin-left: 2rem;
+}
+
+.news-img, .blog-img {
+    display: flex;
+}
+
+.Blog {
+    margin-left: 4rem;
+}
+
+.date {
+    color: #8590A4;
+
+}
+
+.img1 p a, .img2 p a {
+    color: #13da5a;
+    text-decoration: none;
+}
+
+.allnews-btn {
+    width: 100%;
+    color: #13da5a;
+    font-size: 1rem;
+    padding: 11px 0;
+    background-color: transparent;
+    border-top: 1px solid #213750;
+    border-bottom: 1px solid #213750;
+    border-left: none;
+    border-right: none;
+}
+
+.img1 p a:hover, .img2 p a:hover, .allnews-btn:hover {
+    color: #64e691;
+}
+/* end of styling for the news and blog */
+
+/* styling for call to action  */
+
+.call-container {
+    background-image: linear-gradient( #192862, #131B3B);
+    margin-top: 5rem;
+    padding: 5rem 0;
+}
+
+.call-container h2 {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+.call-container p {
+    color: #959dae;
+    font-size: 1.125rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+.store-flex {
+    display: flex;
+    /* width: 40rem; */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.store-content {
+    width: 9rem;
+    height: 2.813rem;
+    background-color: white;
+    display: flex;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    margin-right: 2rem;
+    border-radius: 5px;
+}
+
+.store-content i {
+    font-size: 1.5rem;
+}
+
+.store-text {
+    height: inherit;
+    margin-left: 0.3rem;
+}
+
+.store-text small {
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.store-text h4 {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+/* end of styling for call to action section  */
+
+/* styling for the bottom container */
+
+.bottom-container {
+    background-color: #101729;
+    margin-bottom: 0;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+   margin-left: 4rem;
+   padding-top: 3rem;
+}
+
+.bottom-logon{
+    width: 180px;
+    height: 32px;
+}
+
+.social-icons {
+    width: 17px;
+    height: 15px;
+    margin-left: 1rem;
+}
+
+.social-icons1 {
+    margin-left: 3rem;
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 3rem 2rem 1rem;
+
+}
+
+.content-section h3 {
+    color: #B8C0D2;
+    font-size: 0.875;
+}
+
+.content-section p a {
+    color: #13da5a;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.content-section p a:hover {
+    color: #108538;
+}
+
+.resources .new, .learn .new {
+    background-color: #044F9C;
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.3rem;
+    border-radius: 3px;
+}
+
+.footer-p {
+    color: #8590A4;
+    font-size: 0.9rem;
+    margin: 0rem 3rem 1rem 4rem;
+    text-align: center;
+}
+
+.juris-p {
+    color: #959dae;;
+    font-weight: bolder;
+}
+
+.footer-p-last {
+    padding-bottom: 3rem;
+}
+
+.fa-telegram {
+    margin-right: 1rem;
+    font-size: 1.3rem;
+}
+
+.fa-arrow-right {
+    margin-left: 1rem;
+    font-size: 1.3rem;
+}
+/* end of bottom container styling */
