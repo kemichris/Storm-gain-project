@@ -305,6 +305,10 @@ body {
     border: none;
 }
 
+.top-content button:hover {
+    background-color: #64e691;
+}
+
 .top-container .img {
     height: 32.188rem;
     margin-right: -22rem;
@@ -342,6 +346,10 @@ body {
     border: none;
     margin: 0 auto;
     display: flex;
+}
+
+.multi-wallet-container button:hover {
+    background-color: #64e691;
 }
 
 .multi-wallet-flex {
@@ -425,6 +433,10 @@ body {
     border: none;
 }
 
+.all-in-one-text button:hover {
+    background-color: #64e691;
+}
+
 .digital-asset-container h2 {
     margin-bottom: 2rem;
 }
@@ -452,6 +464,10 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.cold-wallet-content:hover {
+    background-color: #044F9C;
 }
 
 .cold-wallet-content h3 {
@@ -497,6 +513,7 @@ body {
 
 .all-wallet-btn:hover {
     border: 2px solid #13da5a;
+    backdrop-filter: invert(8%);
 }
 /* end of styling for digital asset section  */
 
@@ -507,6 +524,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: #101A31;
+    padding-bottom: 5rem;
 }
 
 .faq-container h2 {
@@ -564,15 +582,15 @@ body {
 }
 
 .active.faq-content1 {
-    height: 25rem;
+    height: 18rem;
 }
 
 .active.faq-content2 {
-    height: 26rem;
+    height: 18rem;
 }
 
 .active.faq-content3 {
-    height: 11.563rem;
+    height: 19.5rem;
     
 }
 
@@ -581,12 +599,12 @@ body {
 }
 
 .active.faq-content5 {
-    height: 21rem;
+    height: 18rem;
 }
 
-/* .active.faq-content6 {
-    height: 32rem;
-} */
+.active.faq-content6 {
+    height: 19rem;
+}
 
 .active.faq-paragraph {
     visibility: hidden;
@@ -696,9 +714,12 @@ body {
 
 .store-flex {
     display: flex;
-    /* width: 40rem; */
+    margin: 0 auto;
+    width: 50%;
     justify-content: center;
     flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 1.5rem;
 }
 
 .store-content {
@@ -706,10 +727,10 @@ body {
     height: 2.813rem;
     background-color: white;
     display: flex;
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 1rem;
     align-items: center;
-    margin-right: 2rem;
-    border-radius: 5px;
+    border-radius: 2px;
+    cursor: pointer;
 }
 
 .store-content i {
@@ -724,6 +745,7 @@ body {
 .store-text small {
     margin-top: 2rem;
     margin-bottom: 0;
+    font-size: 0.5rem;
 }
 
 .store-text h4 {

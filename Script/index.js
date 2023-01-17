@@ -65,7 +65,51 @@ xIcon5.setAttribute("class", "fa-solid fa-xmark x-mark");
 const xIcon6 = document.createElement("i");
 xIcon6.setAttribute("class", "fa-solid fa-xmark x-mark");
 
-faqcontent6Trading.remove();
+
+productEl.addEventListener("mouseover", ()=>{
+    productDropdown.classList.remove("active");
+});
+earnEl.addEventListener("mouseover", ()=>{
+    earnDropdown.classList.remove("active");
+});
+easyEl.addEventListener("mouseover", ()=>{
+    easyDropdown.classList.remove("active");
+});
+academyEl.addEventListener("mouseover", ()=>{
+    academyDropdown.classList.remove("active");
+});
+companyEl.addEventListener("mouseover", ()=>{
+    companyDropdown.classList.remove("active");
+});
+downloadEl.addEventListener("mouseover", ()=>{
+    downloadDropdown.classList.remove("active");
+});
+
+productEl.addEventListener("mouseleave", ()=>{
+    setTimeout(() => {
+        productDropdown.classList.add("active");
+    }, 5000);
+});
+earnEl.addEventListener("mouseleave", ()=>{
+    earnDropdown.classList.add("active");
+});
+easyEl.addEventListener("mouseleave", ()=>{
+    easyDropdown.classList.add("active");
+});
+academyEl.addEventListener("mouseleave", ()=>{
+    academyDropdown.classList.add("active");
+});
+companyEl.addEventListener("mouseleave", ()=>{
+    companyDropdown.classList.add("active");
+});
+downloadEl.addEventListener("mouseleave", ()=>{
+    downloadDropdown.classList.add("active");
+});
+
+
+
+
+
 
 icon1.addEventListener("click", ()=>{
     faqContent1.classList.add("active");
@@ -147,6 +191,8 @@ xIcon6.addEventListener("click", ()=> {
     faContentFlex6.appendChild(icon6);
 });
 
+faqcontent6Trading.remove();
+
 let toggle =  true;
 
 viewMoreBtn.addEventListener("click", ()=>{
@@ -164,48 +210,13 @@ function hideMore() {
     viewMoreBtn.innerHTML = "View More";
 }
 
-
-productEl.addEventListener("mouseover", ()=>{
-    productDropdown.classList.remove("active");
-});
-earnEl.addEventListener("mouseover", ()=>{
-    earnDropdown.classList.remove("active");
-});
-easyEl.addEventListener("mouseover", ()=>{
-    easyDropdown.classList.remove("active");
-});
-academyEl.addEventListener("mouseover", ()=>{
-    academyDropdown.classList.remove("active");
-});
-companyEl.addEventListener("mouseover", ()=>{
-    companyDropdown.classList.remove("active");
-});
-downloadEl.addEventListener("mouseover", ()=>{
-    downloadDropdown.classList.remove("active");
-});
-
-
-productEl.addEventListener("mouseleave", ()=>{
-    productDropdown.classList.add("active");
-});
-earnEl.addEventListener("mouseleave", ()=>{
-    earnDropdown.classList.add("active");
-});
-easyEl.addEventListener("mouseleave", ()=>{
-    easyDropdown.classList.add("active");
-});
-academyEl.addEventListener("mouseleave", ()=>{
-    academyDropdown.classList.add("active");
-});
-companyEl.addEventListener("mouseleave", ()=>{
-    companyDropdown.classList.add("active");
-});
-downloadEl.addEventListener("mouseleave", ()=>{
-    downloadDropdown.classList.add("active");
-});
-
-inputEl.checked = JSON.parse(localStorage.getItem("cex-dex"))
+inputEl.checked = JSON.parse(localStorage.getItem("cex-dex"));
 updateBody();
+
+inputEl.addEventListener("input", () =>{
+    updateBody();
+    updateLocalStorage();
+});
 
 function updateBody() {
     if (inputEl.checked) {
@@ -217,12 +228,8 @@ function updateBody() {
     }
 }
 
-inputEl.addEventListener("input", () =>{
-    updateBody();
-    updateLocalStorage();
-});
-
 function updateLocalStorage() {
     localStorage.setItem("cex-dex", JSON.stringify(inputEl.checked));
 }
+
 
