@@ -12,11 +12,6 @@ const companyDropdown =document.querySelector(".company-active");
 const downloadEl = document.getElementById("download");
 const downloadDropdown = document.querySelector(".download-active");
 
-// cex and dex variable
-const topContentDex = document.querySelector(".top-container-dex");
-const inputEl = document.getElementById("switch");
-const cexDEx = document.querySelector(".cex-dex");
-
 // FAQ section variables 
 const faqContainer = document.querySelector(".faq-container");
 
@@ -51,19 +46,6 @@ const faContentFlex5 = document.querySelector(".fa-content-flex5");
 const faContentFlex6 = document.querySelector(".fa-content-flex6");
 
 const viewMoreBtn = document.getElementById("view-more-btn");
-
-const xIcon1 = document.createElement("i");
-xIcon1.setAttribute("class", "fa-solid fa-xmark x-mark");
-const xIcon2 = document.createElement("i");
-xIcon2.setAttribute("class", "fa-solid fa-xmark x-mark");
-const xIcon3 = document.createElement("i");
-xIcon3.setAttribute("class", "fa-solid fa-xmark x-mark");
-const xIcon4 = document.createElement("i");
-xIcon4.setAttribute("class", "fa-solid fa-xmark x-mark");
-const xIcon5 = document.createElement("i");
-xIcon5.setAttribute("class", "fa-solid fa-xmark x-mark");
-const xIcon6 = document.createElement("i");
-xIcon6.setAttribute("class", "fa-solid fa-xmark x-mark");
 
 
 productEl.addEventListener("mouseover", ()=>{
@@ -106,10 +88,18 @@ downloadEl.addEventListener("mouseleave", ()=>{
     downloadDropdown.classList.add("active");
 });
 
-
-
-
-
+const xIcon1 = document.createElement("i");
+xIcon1.setAttribute("class", "fa-solid fa-xmark x-mark");
+const xIcon2 = document.createElement("i");
+xIcon2.setAttribute("class", "fa-solid fa-xmark x-mark");
+const xIcon3 = document.createElement("i");
+xIcon3.setAttribute("class", "fa-solid fa-xmark x-mark");
+const xIcon4 = document.createElement("i");
+xIcon4.setAttribute("class", "fa-solid fa-xmark x-mark");
+const xIcon5 = document.createElement("i");
+xIcon5.setAttribute("class", "fa-solid fa-xmark x-mark");
+const xIcon6 = document.createElement("i");
+xIcon6.setAttribute("class", "fa-solid fa-xmark x-mark");
 
 icon1.addEventListener("click", ()=>{
     faqContent1.classList.add("active");
@@ -209,27 +199,3 @@ function hideMore() {
     faqcontent6Trading.remove();
     viewMoreBtn.innerHTML = "View More";
 }
-
-inputEl.checked = JSON.parse(localStorage.getItem("cex-dex"));
-updateBody();
-
-inputEl.addEventListener("input", () =>{
-    updateBody();
-    updateLocalStorage();
-});
-
-function updateBody() {
-    if (inputEl.checked) {
-        cexDEx.innerHTML = "DEX";
-        topContentDex.classList.remove("active");
-    }else {
-        cexDEx.innerHTML = "CEX";
-        topContentDex.classList.add("active");
-    }
-}
-
-function updateLocalStorage() {
-    localStorage.setItem("cex-dex", JSON.stringify(inputEl.checked));
-}
-
-
