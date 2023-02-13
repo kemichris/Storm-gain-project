@@ -298,6 +298,7 @@ body {
 
 .slider {
     display: flex;
+    transition: transform .2s ease-in-out;
 }
 
 .carousel-content {
@@ -389,6 +390,10 @@ body {
     font-weight: bold;
 }
 
+.what-is-card-1 button:hover {
+    background-color: #64e691;
+}
+
 .what-is-card-2, .what-is-card-3 {
     width: 18.022rem;
     height: 22.825rem;
@@ -435,6 +440,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .currency-to-trade {
@@ -509,7 +515,7 @@ body {
     margin-left: -1.2rem;
 }
 
-.paragraph4 p a, .paragraph6 p a {
+.paragraph4 p a, .paragraph6 p a, .paragraph2 p a {
     color: #13da5a;
     text-decoration: none;
     cursor: pointer;
@@ -521,28 +527,28 @@ body {
 }
 
 .active.faq-content1 {
-    height: 18rem;
+    height: 15.5rem;
 }
 
 .active.faq-content2 {
-    height: 18rem;
+    height: 11rem;
 }
 
 .active.faq-content3 {
-    height: 19.5rem;
+    height: 28rem;
     
 }
 
 .active.faq-content4 {
-    height: 19rem;
-}
-
-.active.faq-content5 {
     height: 18rem;
 }
 
+.active.faq-content5 {
+    height: 23.5rem;
+}
+
 .active.faq-content6 {
-    height: 19rem;
+    height: 10rem;
 }
 
 .active.faq-paragraph {
@@ -697,6 +703,10 @@ body {
     font-size: 1.125rem;
     font-weight: bold;
     margin:3rem 0;
+}
+
+.call-container button:hover {
+    background-color: #64e691;
 }
 /* end of styling for the call section */
 

@@ -95,11 +95,48 @@ const contents = document.querySelectorAll(".carousel-content");
 
 let currentContent = 1;
 
+nextButton.addEventListener("click", () => {
+    currentContent++;
+    updateSlide();
+});
+
+prevButton.addEventListener("click", () => {
+    currentContent--;
+    updateSlide();
+});
+
 
 function updateSlide() {
-    
+    if (currentContent > contents.length) {
+        currentContent = 1;
+        
+    } else if (currentContent < 1) {
+        currentContent = contents.length;
+    }
+
+    slider.style.transform = `translateX(-${(currentContent -1) * 22.333}rem)`
+    //  `translateX(-21.333rem)`; 
     
 }
+
+// crypto trading section 
+
+const currencyToTrade = document.querySelector(".currency-to-trade");
+const learnMore = document.querySelector(".learn-more");
+const currencyLearnText = document.getElementById("currency-learn-text")
+
+currencyToTrade.addEventListener("click", () => {
+    currencyToTrade.style.backgroundColor ="#044F9C";
+    learnMore.style.backgroundColor = "#193049";
+    currencyLearnText.innerHTML = "Select a Cryptocurrency and start trading"
+});
+
+learnMore.addEventListener("click", () => {
+    currencyToTrade.style.backgroundColor ="#193049";
+    learnMore.style.backgroundColor = "#044F9C";
+    currencyLearnText.innerHTML = "Click a tile to get additional info about each cryptocurrency trading pair, including prices, charts, FAQs and related news and blog posts"
+});
+
 
 const xIcon1 = document.createElement("i");
 xIcon1.setAttribute("class", "fa-solid fa-xmark x-mark");
