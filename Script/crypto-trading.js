@@ -115,7 +115,6 @@ function updateSlide() {
     }
 
     slider.style.transform = `translateX(-${(currentContent -1) * 22.333}rem)`
-    //  `translateX(-21.333rem)`; 
     
 }
 
